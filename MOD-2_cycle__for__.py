@@ -10,8 +10,8 @@ primes = []
 not_primes = []
 
 for index in range(1, len(numbers)):  # Начинаем цикл с индекса 1, чтобы пропустить первое число (1)
-    is_prime = True
-    for j in range(2, index):
+    is_prime = True                   # если проводить проверку с учетом еденицы, она определяется как True и попадает в первый список.
+    for j in range(2, index):         
         if numbers[index] % j == 0:
             is_prime = False
             break
